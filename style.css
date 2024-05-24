@@ -1,0 +1,94 @@
+/*
+Theme Name: Eksell Child
+Theme URI: https://andersnoren.se/teman/eksell-wordpress-theme/
+Template: eksell
+Author: Anders Norén
+Author URI: https://andersnoren.se
+Description: Eksell is a feature-rich portfolio and blog theme, with deep support for the block editor and full color settings. It includes extensive block styles and multiple prebuilt block patterns, and it styles the block editor to match the front-end of your site so you always have a good idea of what the end result will look like when you’re creating your content. Visitors can filter your posts and Jetpack Portfolio items without reloading the page with the lazyloading category filter, and full color settings in the Customizer give you easy control over all of the colors used in the theme, including the option to set a separate dark mode color scheme for devices that support it. Eksell also features a Blank Canvas page template that only outputs the content you add in the block editor, infinite scroll on archive pages, an optional search overlay, a sticky header setting, a social menu with icons, a footer menu, custom logo support, options for what post meta to display, support for the Block Templates editor, a lightweight construction for fast load times, and developer friendly code. Demo: https://andersnoren.se/themes/eksell/
+Tags: blog,portfolio,grid-layout,one-column,two-columns,three-columns,four-columns,custom-background,custom-colors,custom-logo,custom-menu,editor-style,featured-images,sticky-post,theme-options,threaded-comments,translation-ready,block-styles,wide-blocks
+Version: 1.9.5.1716468481
+Updated: 2024-05-23 20:48:01
+*/
+
+#site-header {
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+
+    border-bottom: 1px solid #EAEAEA;
+}
+
+#site-footer {
+    height: 96px;
+    display: flex;
+}
+
+#site-header, #site-footer {
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, .6) !important;
+}
+
+.section-inner, .site-content-inner {
+    width: 100%;
+    max-width: min(100%, 1140px) !important;
+    margin: 0 auto;
+}
+
+@media (min-width: 700px) {
+    #site-header {
+        min-height: 96px;
+    }
+}
+
+.header-sticky-adjuster {
+    margin-bottom: 0 !important;
+}
+
+.type-fursuit {
+    padding: 0 5rem;
+}
+
+.entry-header {
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 5rem;
+}
+
+
+.featured-media, .featured-media img {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+}
+
+.featured-media .media-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+
+.header-nav {
+    display: flex;
+    margin-right: 10px;
+}
+
+.header-nav li {
+    list-style: none;
+}
+
+.header-nav li a {
+    border-radius: 999px;
+    border-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    padding: 2px 12px 4px;
+    color: #000;
+    text-decoration: none;
+}
+
+.header-nav li a:hover {
+    background-color: #EAEAEA;
+}
+
+body > .elementor, #site-content {
+    margin-top: 50px;
+}
